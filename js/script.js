@@ -6,7 +6,7 @@ const menuMainBtn = document.querySelector('.menu-list__item_main');
 const menuTestItem = document.querySelector('.menu-list__item_test');
 const exiteBtn = document.querySelector('.exite-btn');
 const testBtn = document.querySelector('.btn-test');
-const contentHidden = document.querySelector('.main-page__content');
+// const contentHidden = document.querySelector('.main-page__content');
 
 //details.addEventListener('click',showHideDetails);
 menuBurger = document.addEventListener('click', showHideMenu);
@@ -33,10 +33,10 @@ function showHideDetails() {
 }
 
 function showHideMenu() {
-    menu.classList.toggle('show-menu');
-    if (contentHidden.classList.conteins('hidden')) {
-        contentHidden.classList.add('hidden');
-    } else {
-        contentHidden.classList.remove('arrow-up')
-    }
+    menuCover.classList.toggle('show-menu');
+    // if (contentHidden.classList.conteins('hidden')) {
+    //     contentHidden.classList.add('hidden');
+    // } else {
+    //     contentHidden.classList.remove('arrow-up')
+    // }
 }
