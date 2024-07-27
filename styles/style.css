@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=PT+Serif:wght@400;700&family=Roboto:wght@300;400&family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #0D0C11;
+    min-width: 320px;
+    /* max-width: 440px; */
+    margin: 0 auto;
+    background-color: #0D0C11;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+    font-weight: 300;
+    line-height: 137%;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    z-index: 100;
+    padding: 18px 13px 0 23px;
+}
+
+.show-menu {
+    display: block;
+}
+
+.menu_exit-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu_exit-btn img {
+    cursor: pointer;
+}
+
+.menu-list {
+    margin-top: 64px;
+}
+
+.menu-list__item {
+    margin-bottom: 27px;
+    color: #FFFFFF;
+}
+
+.menu-list__item:hover {
+    color: #F4CE0C;
+}
+
+.main-page__header {
+    padding: 17px 15px 13px;
+    background-color: #181818;
+}
+
+.sandwich {
+    cursor: pointer;
+}
+
+.main {
+    font-family: 'PT Serif', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.content__brain-block {
+    background-image: url('../assets/background-night-sky.svg');
+    background-position: top center;
+    height: calc(100vh - 50px);
+    justify-content: space-between;
+}
+
+.btn-test {
+    width: 50vw;
+    min-height: 6vh;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(50% 50% at 50% 50%, #FFC700 0%, #FFC700 100%);
+    border-radius: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 4vw;
+    font-weight: 700;
+    cursor: pointer;
+    color: black;
+}
+
+.brain-block__text_top {
+    font-size: 6vw;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.brain-block__text_big-yellow {
+    margin-top: 17px;
+    text-align: center;
+    font-family: 'Yeseva One', cursive;
+    font-size: 10vw;
+    line-height: 105%;
+    letter-spacing: 0.03em;
+    color: #FFC700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.big-brain {
+    width: 47vw;
+}
+
+.brain-block__text_bottom {
+    margin: 22px 0 11px;
+    font-size: 5vw;
+    letter-spacing: 0.05em;
+    line-height: 127%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.brain-block__text_bottom span {
+    color: #FFC700;
+    font-weight: bold;
+}
+
+.brain-block__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details_arrow {
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.arrow-up {
+    transform: none;
+}
+
+.details_text {
+    margin: 5px 0 11px;
+    font-size: 3vw;
+    line-height: 11px;
+    letter-spacing: 5%;
+    color: #FFFFFF;
+}
+
+.hidden {
+    display: none;
+}
+
+.content__blue-block_background {
+    background-image: url('../assets/blue-block-backgr.svg');
+    background-position: top center;
+    background-size: cover;
+
+}
+
+.content__blue-block {
+    
+    padding: 35px 29px 25px 33px;
+    background: radial-gradient(84.34% 50.29% at 48.75% 49.71%, #2950C2 0%, rgba(38, 91, 199, 0.96) 40.62%, rgba(39, 98, 187, 0) 85.42%);
+}
+
+.blue-block {
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blue-block__text {
+    font-family: 'Yeseva One';
+    font-size: 5vw;
+    line-height: 128%;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.qoutes-open {
+    margin-bottom: 17px;
+    align-self: start;
+}
+
+.quotes-close {
+    transform: rotate(-180deg);
+    align-self: flex-end
+}
+
+.content__brain-map-block {
+    background-color: white;
+    padding: 0 30px 40px 11px;
+}
+
+.brain-map-block_text {
+    color: #272727;
+    margin: 38px auto;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    font-size: 5vw;
+}
+
+.brain-map-block_text span {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.content__brain-map-block button {
+    width: 200px;
+    height: 44px;
+    margin-top: -9px;
+}
+
+.content__tunder-block {
+    background-image: url('../assets/background-night-sky.svg');
+    padding: 0 9px;
+    position: relative;
+}
+
+.tunder-block__text {
+    font-family: 'Merriweather', serif;
+    color: #FFFFFF;
+    font-size: 5vw;
+    line-height: 133%;
+    letter-spacing: 0.05em;
+    margin: 55px 5px 15px;
+}
+
+.tunder-block__text span {
+    font-weight: 900;
+    color: #FFC700;
+}
+
+.tunder-block__text_gray {
+    position: relative;
+    font-family: 'Merriweather', serif;
+    font-size: 5vw;
+    line-height: 144%;
+    letter-spacing: 0.05em;
+    background-color: #F3F3F2;
+    background: rgba(243, 243, 242, 0.8);
+    border-radius: 20px;
+    color: #181818;
+    padding: 30px 15px;
+    margin-bottom: 33px;
+    z-index: 100;
+}
+
+.content__tunder-block .btn-test {
+    background: transparent;
+    border: 1px solid white;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.lightning {
+    position: relative;
+    width: 165px;
+    height: 165px;
+    position: absolute;
+    z-index: 1;
+}
+
+.lightning-right {
+    right: -30px;
+    bottom: 300px;
+    transform: rotate(20deg);
+    z-index: 1;
+}
+
+.lightning-left {
+    left: -100px;
+    bottom: 30px;
+    transform: rotate(-33deg);
+    z-index: 1;
+}
+
+.footer {
+    font-family: Roboto;
+    font-size: 3vw;
+    line-height: 230%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 440px) {
+
+    .content__brain-block {
+        height: fit-content;
+    }
+    .content__brain-map-block {
+        padding: 0 40px 40px;
+    }
+    .content__tunder-block {
+        padding: 0 20px;
+    }
+    .btn-test {
+        height: 44px;
+        width: 200px;
+        font-size: 16px;
+    }
+    .brain-block__text_top {
+        font-size: 26px;
+    }
+    .brain-block__text_big-yellow {
+        font-size: 44px;
+    }
+    .big-brain {
+        width: 200px;
+    }
+    .brain-block__text_bottom {
+        font-size: 22px;
+    }
+    .details_text {
+        font-size: 13px;
+    }
+    .blue-block__text {
+        font-size: 22px;
+        padding: 0 40px;
+    }
+    .brain-map-block_text {
+        font-size: 22px;
+        max-width: 440px;
+    }
+    .tunder-block {
+        max-width: 440px;
+    }
+    .tunder-block__text {
+        font-size: 22px;
+    }
+    .tunder-block__text_gray {
+        font-size: 22px;
+    }
+    .lightning {
+        width: 200px;
+        height: 200px;
+    }
+    .footer {
+        font-size: 13px;
+    }
+}

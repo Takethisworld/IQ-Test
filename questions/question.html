@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IQ-Test</title>
+    <link rel="stylesheet" href="./question.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu_exit-btn">
+        <img src="/assets/main-x.svg" alt="exit" />
+      </div>
+      <div class="menu-list">
+        <p class="menu-list__item menu-list__item_main">ГЛАВНАЯ</p>
+        <p class="menu-list__item">ИНФОРМАЦИЯ О ТЕСТЕ</p>
+        <p class="menu-list__item menu-list__item_test">ПРОЙТИ ТЕСТ</p>
+      </div>
+    </header>
+    <main class="inner">
+      <div class="q-page">
+        <header class="q-page__header">
+          <img class="sandwich" src="IQ-test/images/sandwich.svg" alt="menu" />
+          <img
+            class="small-brain"
+            src="IQ-test/images/big-brain.svg"
+            alt="brain"
+          />
+          <p class="header__text_yellow">ТЕСТ НА ОПРЕДЕЛЕНИЕ IQ</p>
+        </header>
+        <div class="q-page__content-all">
+          <div class="gray-bar">
+            <div class="gray-bar_fill" style="width: calc(100% / 11)"></div>
+          </div>
+          <div class="q-page__content"></div>
+          <button class="btn-next" disabled>ДАЛЕЕ</button>
+        </div>
+      </div>
+    </main>
+    <script src="IQ-test/index.js"></script>
+    <script src="IQ-test/questions/questions.js"></script>
+  </body>
+</html>
